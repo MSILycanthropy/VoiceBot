@@ -15,6 +15,7 @@ client.once("ready", () => {
   console.log("Ready!");
 });
 
+// Read all the events and load them for use
 fs.readdir("./src/events/", (err, files) => {
   if (err) return console.error(err);
 
@@ -28,6 +29,7 @@ fs.readdir("./src/events/", (err, files) => {
   });
 });
 
+// Read all the commands and load them for use
 fs.readdir("./src/commands/", (err, files) => {
   if (err) return console.error(err);
 
