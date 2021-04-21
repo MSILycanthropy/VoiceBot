@@ -1,4 +1,4 @@
-const prefix = "zach ";
+const prefix = "!";
 
 exports.run = async (client, message) => {
   if (message.author.bot) return;
